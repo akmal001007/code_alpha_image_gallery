@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div style="text-align:center">
+        <h2>Akmal Image Gallery</h2>
+        <p>Code Alpha Task 1</p>
+    </div>
+
+<!-- slide show part  -->
+
+    <div class="slide">
+        <div class="mySlides-fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/me.jpeg" style="width: 100%;">
+            <div class="text">Akmal Nawabi</div>
+        </div>
+
+        <div class="mySlides-fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/bamyan.jpeg" style="width: 100%;">
+            <div class="text">Bamyan province</div>
+        </div>
+
+        <div class="mySlides-fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/2022_10_27_21_44_IMG_6859.JPG" style="width: 100%;">
+            <div class="text">Kabul university</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+    </div>
+    <br>
+    <!-- dots and circles  -->
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- my images part  -->
+
+  <div class="parent">
+    <div class="column">
+        <img id="myImg" class="thumbnail" src="./images/me.jpeg" alt="akmal" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img id="myImg" class="thumbnail" src="./images/me2.jpeg" alt="akmal" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <img id="myImg" class="thumbnail" src="./images/bamyan.jpeg" alt="akmal" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <img id="myImg" class="thumbnail" src="./images/boldAkm.jpg" alt="mark" onclick="myFunction(this);">
+    </div>
+  <div class="column">
+      <img id="myImg" class="thumbnail" src="./images/2022_10_27_21_44_IMG_6859.JPG" alt="akmal" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <img id="myImg" class="thumbnail" src="./images/transfarmer.jpg" alt="akmal" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <img id="myImg" class="thumbnail" src="./images/harris.jpg" alt="akmal" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+      <img id="myImg" class="thumbnail" src="./images/syr9.jpg" alt="mark" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- open modal part  -->
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img1">
+        <div id="caption"></div>
+    </div>
+
+</body>
+<script src="slideShow.js"></script>
+</html>
